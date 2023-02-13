@@ -4,10 +4,10 @@ if str.isdigit(a) and str.isdigit(b):
     print("Sum: ", int(a) + int(b))
     print("Difference: ", int(a) - int(b))
     print("Product: ", int(a) * int(b))
-    if int(a[0:]) or int(b[0:]) != 0:
-        print("Quotient: ", int(int(a) / int(b)))
-    elif int(a[0:2]) or int(b[0:2]) is 0:
+    if a or b == 0:
         print("Division by zero")
+    else:
+        print("Quotient: ", int(int(a) / int(b)))
     if a == b:
         print("Equal")
     else:
